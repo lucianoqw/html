@@ -1,0 +1,273 @@
+<!--
+    selector 
+    conecta um elemento html com css
+    *globalselector *
+    *element/type selector, h1, h2, p, div
+    *id seletor: #box, #container 
+    *class seletor: .red, .m-4
+    *attribute selector, pseudo-class, pseudo-elemento, e outros 
+    
+-->
+
+
+<!--
+    AT-rules
+    *esta relacionado ao compotamento do css
+    *começa com o sinal @ seguindo do idetificador e valor
+ exemplos comuns
+   -@import: incluir um css externo
+   -@ media  regras condicionais para dispositivos
+   -@font-face: fonte externas 
+   -@keyframes: animation 
+
+-->
+<!--
+    #shorthand
+    juncão de propriedades 
+    resumido
+    legivel
+    ex: background-color: #000
+        background-image: no-repeat
+        background-no-repeat;
+        background-position:left top
+
+ #background shorthand
+ background:#000 url(images/bg.gif) no-repeat left top
+
+ font-style:italic;
+ font-weigth:bold;
+ font-seze: 8em;
+ line-heigth:1.2;
+ font-family: arial,sans-serif;
+
+ font shorthand:
+ font:italic bold .8em/1,2 arial, sens-serif
+
+
+ f12 para abrir dev tools
+
+
+
+ São coisas que permitem que browsers adiocionem features a fim de colocar em uso alguma novidade que vemos no CSS.
+
+Exemplos:
+
+p {
+	-webkit-background-clip: text; /*Chrome, Safari, iOS e Android*/
+	-moz-background-clip: text; /* Mozilla (Firefox) */
+	-ms-background-clip: text; /* Internet Explorer ou Edge*/
+	-o-background-clip: text; /* Opera */
+Você também pode consultar se a feature pode ser utilizada através dos sites:
+
+https://ireade.github.io/which-vendor-prefix
+
+https://caniuse.com
+
+funcoes
+
+Um exemplo de função é:
+
+color: rgb(255,0,100);
+  
+
+Como conhecer e estudar os valores na documentação?
+<color> <length>
+Os termos podem variar values ou data types
+Documentação MDN: https://developer.mozilla.org/en-US/
+-->
+
+
+
+
+
+<!--
+    Tipos numéricos
+<integer> - número inteiro como -10 ou 223
+<number> - número decimal como -2.4, 64 ou 0.234
+<dimension> - é um <number> com uma unidade junto: 90deg, 2s, 8px
+<percentage> - representa uma fração de outro número: 50%
+Unidades comuns
+<length> - é um dos mais usados no CSS e representa um valor de distância: px, em, vw
+<angle> - representa um ângulo: deg, rad, turn
+<time> - representa um tempo: s, ms
+<resolution> - representa resoluções para dispositivos: dpi
+-->
+
+
+
+
+
+
+<!--
+    Distâncias absolutas <length>
+São fixas e não alteram seu valor.
+
+| Unidade  | Nome                | Equivalência         |
+|----------|---------------------|----------------------|
+| cm       | Centímetros         | 1cm = 96px/2.54      | 
+| in       | Inches (polegadas)  | 1in = 2.54cm = 96px  | 
+| px       | Pixels              | 1px = 1/96th of 1in  |
+*o mais comum e mais utilizado é o px
+
+*não é recomendado usar cm
+
+Distâncias relativas
+São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.
+Benefício: Maior adaptação aos diferentes tipos de tela.
+| Unidade  | Relativo a                                    |
+|----------|-----------------------------------------------|
+| em       | Tamanho da font do elemento pai               |
+| rem      | Tamanho da font do elemento raiz (root/html)  | 
+| vw       | 1% da viewport wid                            |  
+| vh       | 1% da viewport height                         |
+Normalmente o tamanho da font padrão do navegador é de 16px e para mudar esse valor temos que fazer a alteração no root ou no elemento html.
+:root {
+	font-size: 18px;
+}
+
+/* OU */
+
+html {
+	font-size: 18px;
+}
+O viewport é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.
+-->
+
+
+
+
+
+
+<!--
+    porcentagem:
+
+    As porcentagens são valores bem flexíveis
+Em muitos casos é tratado da mesma maneira que as distâncias <length>
+Sempre será relativo a algum valor
+💻 Exemplo
+Relativo ao elemento pai
+
+<ul>
+	<li>One</li>
+	<li>Two</li>
+	<li>Three
+		<ul>
+			<li>Three A</li>
+			<li>Three B</li>
+			<ul>
+				<li>Three B 2</li>
+			</ul>
+		</ul>
+	</li>
+</ul>
+li {
+    font-size: 80%;
+}
+-->
+
+<!--
+<position>
+
+Representa um conjunto de coordenadas 2D:
+top, right, bottom, left e center
+Usado para alguns tipos de propriedades como o background-position
+Não confundir com a propriedade position
+-->
+
+<!--
+    FUNCÕES
+Em programação, funções são reconhecidas por causar um reaproveitamento de código.
+Exemplos de funções do CSS:
+
+rgb()
+hsl()
+url()
+calc()
+Dentro dos parêntesis são passados argumentos
+
+Link da documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions
+-->
+
+
+
+<!--
+    Strings: texto envolto em aspas
+.box::after {
+	content: "Isso é uma string"
+}
+Identificadores: podemos ter nomes de cores como red, black, gold
+-->
+
+
+
+<!-- fazendo caixa no css
+    HTML:
+
+<div>
+	CSS é incrível!
+</div>
+CSS:
+
+div {
+   width: 100px; 
+   height: 100px;
+   border: 1px solid red;
+   margin: 10%;
+-->
+
+
+<!--
+    Margin
+Descrição
+Margin, é o espaço (margem) entre os elementos
+
+Podemos dividir o margin em 4 valores:
+
+/* margin-top | margin-right | margin-bottom | margin-left */
+values: <length> | <percentage> | auto
+
+Geralmente usamos uma forma abreviada (shorthand) para escrever o margin. Esse formato segue o sentido horário iniciando pelo top, seguindo para right, bottom e left.
+
+margin: 12px 16px 10px 4px; /* TOP = 12px | RIGHT = 16px | BOTTOM = 10px | LEFT = 4px */
+margin: 12px 16px 0; /* TOP = 12px | RIGHT = 16px | BOTTOM = 0px | LEFT = 16px */
+margin: 8px 16px; /* TOP = 8px | RIGHT = 16px | BOTTOM = 8px | LEFT = 16px */
+margin: 8px; /* TOP = 8px | RIGHT = 8px | BOTTOM = 8px | LEFT = 8px */
+O margin é aplicado em elementos com display block
+Cuidado com o margin collapsing que é quando o top se junta ao bottom
+-->
+
+<!--
+ BORDAS: BORDER
+    São as bordas da caixa
+
+Documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
+value: <border-style> | <border-width> | <border-color>
+
+style: solid | dotted | dashed | double | groove | ridge | inset | outset
+width: <length>
+color: <color>
+div {
+	/* shorthand */
+	border-top: solid 2px; /* top | right | bottom | left */
+
+	/* style */
+	border: solid;
+
+	/* width <length> | style */
+	border: 2px dotted;
+
+	/* style | color */
+	border: outset #f33;
+
+	/* width | style | color */
+	border: medium dashed green;
+
+}
+E o outline?
+O outline é muito semelhante ao border, mas difere em 4 sentidos:
+Não modifica o tamanho da caixa, pois não é parte do Box Model
+Poderá ser diferente de retangular
+Não permite ajuste individuais
+Mais usado pelo user agent para acessibilidade
+-->

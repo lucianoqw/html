@@ -1,0 +1,281 @@
+<h1>titulo</h1>
+titulo
+<!--html= hypertext/hiper texto, markup/marcaçao, language/linguagem
+-->
+
+
+<!--
+    Anatomia das tegs
+    -abertura da teg <h1>
+    -fechameno da teg <h1>
+    -conteudo <h1>titulo<h1>
+    -elementos 
+    -elementos vazios: img, input
+-->
+
+
+<!--
+    Atributos html
+    -imformaçoes extras
+    -configuraçoes, <img src="" alt="">
+    atributos booleanos, verdadeiro ou falso, <input type="text"disabled>
+<a href="">link</a>
+    -->
+
+
+    <!--
+        atributos globais mais utilizados.
+        -class: <divclass="carrinho"></div>  classificar elementos 
+        -contenteditable:<divcontenteditable="true">conteudo</div>  posso editar os conteudos 
+        -data-
+        -hidden:esconder uma pagina
+        -id: nomes que nao pode repitir 
+        -style:<divstyle="color:red"></div>
+        -tabindex:<div
+tabindex="1"
+>ali</div>
+<div
+tabindex="3"
+>aqui</div>
+<div
+tabindex="2"
+>cola</div>
+        -title: definir um titulo
+        div
+    -->
+
+<div>
+    era uma vez um dragão chines <em>quer que eu te comte outra vez</em>. <p>era uma vez um dragâo chines <strong>quer que eu ti conte outra vez</p><a href="http://google.com">saiba mais</a>
+</div>
+<!--
+    conteudo de texto
+    caracteres reservados.
+    &lt; <
+    &gt; >
+    &amp; &
+    &quot; "
+    &apos; ''
+-->
+<!--
+    semantica
+    dar signifiado
+    elementos semanticos
+-->
+<!--
+    cabeçalhos e paragrafos 
+-->
+<h1>sobre mim </h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+<h2>nascimento</h2>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+
+<h2>trabalho</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.!
+
+<a href="">saiba mais</a> 
+<!--
+    listas
+     ordenadas 
+     nao ordenadas 
+-->
+<p>
+  ordenado 
+    <ol>
+        <h2>Igredientes</h2> 
+    <li>3 folhas de couve;</li>
+    <li>1 pedacinho de gengibre;</li>
+    <li>300 lm de agua;</li>
+    <li>adoçante a gosto</li>
+    <li>gelo a gosto.</li>
+    </ol>
+nao ordenado 
+    <ul>
+        <h2>Igredientes</h2> 
+    <li>3 folhas de couve;</li>
+    <li>1 pedacinho de gengibre;</li>
+    <li>300 lm de agua;</li>
+    <li>adoçante a gosto</li>
+    <li>gelo a gosto.</li>
+    </ul>
+</p>
+
+<!--
+    citacoes
+    <blockquote>
+        <cite>
+            <q>
+-->
+<blockquote cite="https://www.google.com.br/">
+    o <strong>elemento html<code>&lt;blockquote&gt;</code></strong>(ou <em>html block quotation elemento</em>)
+indica que um texto externo foi citado </blockquote>
+<p>
+    De acordo com <a href="https://www.google.com.br/"><cite>google</cite></a>
+</p>
+
+<!--
+    abreviaçoes
+    <abbr
+-->
+<p>
+    usamos <abbr title="hypertext markup language">html</abbr> para estruturar nossos documentos da web
+</p>
+
+<!--
+    detales decontatos de quem fez a html
+    <address>
+-->
+<address>
+    <p>
+        luciano <br>
+        <strong>novo hamburgo</strong>
+    </p>
+</address>
+
+<!--
+    lista de inscriçao 
+    <dl> lista de discriçao
+        <dt></dt> termo de discriçao
+    <dd></dd> discrição da lista 
+    </dl>
+-->
+<h2>Glossário</h2>
+<dl>
+    <dt>hypertext</dt>
+    <dd> é um hiper texto com possibilidades...</dd>
+    <dt>markup</dt>
+    <dd>  marcaçao de texte</dd>
+    <dt>language</dt>
+    <dd> linguage com semantica e sintaxe...</dd>
+</dl>
+<!--
+    representando codigos de computador 
+    <code>
+        partes genericas do codigo
+    <pre>
+        blocos de codigos, pois esa teg matém os espaços em branco
+        e recuos que eu colocar no meu codigo
+-->
+<pre>
+    <code>
+        document
+          .quaryselector("body")
+    </code>
+</pre>
+
+<!--
+    elementos genéricos
+    <div>
+    <span>
+-->
+<div class="cart">
+<span>camiseta</span>
+<span> 99,00</span>
+</div>
+<!--
+    hyperlinks- elemento Ãncora:<a>
+    Anatomia 
+    atributos globais 
+    href
+    para ondeiremos, quando clicarmos no link ?
+    url completa
+    fragmento 
+    email
+    telefone
+    e outros 
+    download
+    target
+    self(parao)
+    black
+-->
+<ul>
+    <li><a href="https://www.google.com.br/">googe</a></li>
+    <li><a href="https://www.google.com.br/" target="blank">google</a></li>
+    <li><a href="blackqw@hotmail.com">email</a> </li>
+    <li><a href="tel:5551999386470">telefone</a></li>
+</ul>
+
+
+<ol>
+    <li><a href="#about">sobre mim</a></li>
+    <li><a href="#history"> historia </a>
+    </li>
+    <li><a href="#works">trabalho</a></li>
+</ol>
+
+ <h1 id="about">sobre mim</h1>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. A et ex officia autem adipisci iusto deleniti cum laudantium molestias consectetur dicta aspernatur eius similique, explicabo accusantium? Voluptatibus earum aut delectus.
+
+
+ <h2 id="history">historia</h2>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti molestias ea qui nisi? Repellendus ipsam eius corporis voluptatibus assumenda blanditiis at debitis porro, optio ipsa, totam molestiae officia maiores.
+
+
+ <h2 id="works">trabalho</h2>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam enim, veritatis quas quisquam accusamus corrupti optio non corporis iusto rerum praesentium eos saepe officia dignissimos fuga dolor unde ex.
+
+ <!--
+    conteudos do hypertext
+    qualquer conteudo 
+ -->
+ <p><a href="https://www.google.com.br/" title="ir para o google"> 
+    <h1>google</h1> <p>bora la </p><img src="https://source.unsplash.com/" alt=""></a> </p> 
+    <!-- 
+        urls e caminhos de arquivos
+    uniform resource locator
+    seguencia de texto que define onde algo esta localizado na web
+    urls usam caminhos para encontrar arquivos 
+
+
+    caminhos para encntrar arquivos 
+      onde,noexplorador de arquivos, um recurso esta localizado 
+
+    -->
+    <a href="index2.html" target="blanck">inicio </a>
+
+
+    <!--
+        como navgar pelos caminhos 
+        entrendo em diretorios: nova pasta/ 
+        saindo de diretorios: ../
+        diretorio raiz (root ou pai)
+    -->
+    <!--
+        Atributos globais são atributos aplicáveis em todas as Tags, sendo as principais:
+
+class — além de classificar as Tags, é usada para aplicar estilo css e também para acessar com o Java Script.
+<div class="conteúdo">
+</div>
+contenteditable — usado para editar o conteúdo da página, porém não é mantido após salvar.
+<div contentedtable="true">
+</div>
+data-* — usado para expandir os tipos de atributos que podemos usar para fazer mais tarde lógica no Java Script , utilizado em css também.
+<div data-qualquercoisaaqui="">
+</div>
+   Escrito com "-" ou tudo junto.
+hidden — usado para esconder uma Tag.
+<div class="carrinho" hidden>
+conteúdo
+</div>
+id — usado apenas 1 por Tag para identificação, para também mais tarde usar no Java Script e css.
+<div id="texto">
+conteúdo
+</div>
+
+<div id="texto2">
+conteúdo
+</div>
+style — aplica a estilização na Tag, normalmente não se usa "style" dentro da Tag, mas sim em arquivos externos.
+<div style="color: red">
+tabindex — usado para ordenar o Tab na página.
+<div tabindex="3">
+</div>
+
+<div tabindex="1">
+</div>
+
+<div tabindex="2">
+</div>
+title — serve para definir um título para a Tag, quando colocamos o mouse descansando em cima do conteúdo da página.
+Se você quiser estudar outros Atributos Globais vá ao site https://developer.mozilla.org/pt-BR/ .
+    -->
