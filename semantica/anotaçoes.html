@@ -1,0 +1,261 @@
+<!--Cabeçalho <header> :
+    O cabeçalho do nosso site, o local onde geralmente fica a logo e o menu.
+    
+    Navegação <nav> :
+    A navegação do site vai oferecer links para seções do site, o nosso menu. costuma ficar dentro da header, porém pode ficar em outros lugares, como em uma parte lateral, ou na parte de baixo.
+    
+    Conteúdo principal <main> :
+    A parte do site aonde vai o conteúdo principal, no caso de um blog, teremos vários artigos, vários posts.
+    
+    Conteúdo relacionado <aside>:
+    O conteúdo relacionado é algo que seja relacionado levemente ao nosso conteúdo principal, porém não tanto para ficar lá.
+    
+    Rodapé <footer>
+    Onde ficam as informações da parte de baixo da página.
+    
+    Exemplo básico de como ficaria um HTML semântico:-->
+
+<!-- A tag article vai criar blocos de conteúdo que estejam relacionados, exemplo a seguir:
+
+    <body>
+    
+        <main>
+            <h1>Receitas</h1>
+            <p>Essa é uma página de receitas</p>
+    
+            <article>
+                <h2>Receita de torta de maçã</h2>
+                <p>Essa é uma receita de torta de maçã</p>
+            </article>
+    
+            <article>
+                <h2>Receita de torta de limão</h2>
+                <p>Essa é uma receita de torta de maçã</p>
+            </article>
+        </main>
+    </body>-->
+
+<!--A tag section serve para colocarmos seções na nossa página HTML, e uma dica de ouro: Geralmente se coloca um título e conteúdo na tag section. Antigamente usava-se uma div para fazer essas divisões e seções de conteúdos, mas semanticamente é mais apropriado usar uma tag section. Exemplo de uso a seguir:
+
+<main>
+    <h1>Receita 1</h1>
+    <p>descrição da receita</p>
+
+    <section>
+        <h2> Modo de preparo</h2>
+        <p>Modo de preparo</p>
+    </section>
+</main>-->
+
+<!--<h1>Título <span class="destaque">destacado</span></h1>
+Um exemplo do uso de div semântico:
+
+<div class="cart">
+    <h2>Carrinho de compras</h2>
+</div>-->
+
+<!--Element Selector
+
+Todos os elementos HTML
+HTML
+
+<h1>Título da página</h1>
+<p>Conteúdo da minha página</p>
+CSS
+
+h1 {
+	color: blue;
+	font-size: 60px;
+}
+
+p {
+	color: green;
+}
+ID Selector
+
+Um elemento que tenha um atributo id
+Cada id deverá ser único
+Usa-se # para indicar um ID selector
+HTML
+
+<h1 id="title">Título da página</h1>
+<p id="content">Conteúdo da minha página</p>
+CSS
+
+#title {
+  color: yellow;
+}
+
+#content {
+	color: orange;
+}
+Class Selector
+
+Os elementos com atributo class
+Podemos ter uma ou mais classes
+Usa-se . para indicar um class selector
+Todos os elementos com a mesma class são alterados
+HTML
+
+<h1 class="red big">Título da página</h1>
+<p class="red big">Conteúdo da minha página</p>
+CSS
+
+.red {
+color: red;
+}
+
+.big {
+	font-size: 3em;
+}
+Attribute Selector
+
+Um elemento que tenha um atributo específico
+HTML
+
+<h1 title="Algum titlulo">Título da página</h1>
+<p title="Conteúdo da página">Conteúdo da minha página</p>
+CSS
+
+[title] {
+	color: orange;
+}
+Pseudo-class Selector
+
+Elementos em um estado específico
+HTML
+
+<h1 class="red big">Título da página</h1>
+<p class="red big">Conteúdo da minha página</p>
+CSS
+
+p:hover {
+	color: red;
+}
+
+h1:hover {
+	color: red;
+}
+Múltiplos
+É possível selecionar múltiplos elementos e aplicar alguma regra CSS para todos eles.
+
+Usamos uma separação por vírgulas para isso:
+
+h1, p, .title, .title:hover {
+	color: red;
+}    
+
+Descendant combinator
+Identificado por um espaço entre os seletores
+Busca um elemento dentro de outro, mesmo que existam outros elementos no caminho
+HTML
+
+<body>
+	<article>
+		<h2>Um Título</h2>
+	</article>
+</body>
+CSS
+
+body article h2 {
+	color: red;
+} 
+
+Pega o elemento por tipo e posição
+
+HTML
+
+<ul>
+  <h3>Palavras bonitas</h3>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+</ul>
+CSS
+
+ul li:nth-of-type(1) {
+  font-weight: bold;
+}
+
+:nth-child(odd) e :nth-child(even)
+even - números pares
+odd - números ímpares
+HTML
+
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+CSS
+
+ul li:nth-child(odd) {
+  color: gray;
+}
+
+Ações do usuário
+Algumas estilos só são aplicados quando o usuário faz alguma ação na página.
+
+:hover
+
+a:hover {
+  color: red;
+}
+Vai mudar a cor do link para vermelho quando o usuário passar o mouse sobre o link
+
+:focus é aplicado quando o elemento recebe o foco da ação do usuário que pode ser feita utilizando o teclado ou clicando no elemento com o mouse. É comumente usado em campos de input como uma forma de mostrar qual o input "ativo".
+
+input:focus {
+  border-color: red;
+}
+
+Ações do usuário
+Algumas estilos só são aplicados quando o usuário faz alguma ação na página.
+
+:hover
+
+a:hover {
+  color: red;
+}
+Vai mudar a cor do link para vermelho quando o usuário passar o mouse sobre o link
+
+:focus é aplicado quando o elemento recebe o foco da ação do usuário que pode ser feita utilizando o teclado ou clicando no elemento com o mouse. É comumente usado em campos de input como uma forma de mostrar qual o input "ativo".
+
+input:focus {
+  border-color: red;
+}
+
+Pseudo-elements
+Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS
+
+::pseudo-element-name
+
+💻 Exemplos
+::before adiciona um pseudo-elemento antes do elemento selecionado.
+
+HTML
+
+<ul>
+  <li>Gratidão</li>
+  <li>Esperança</li>
+  <li>Fé</li>
+  <li>Liberdade</li>
+</ul>
+CSS
+
+li::before {
+  content: "> "
+}
+::after adiciona um pseudo-elemento depois do elemento selecionado.
+
+li::after{
+  content: ";"
+}
+Tanto para o ::before quanto para o ::after é preciso adicionar o content, mesmo que ele seja vazio content = "";
+
+::first-line pega a primeira linha de um texto.
+
+p::first-line {
+	font-weight: bold;
+}-->

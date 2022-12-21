@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    height: 100vh;
+    gap: 1rem;
+}
+
+header {
+    display: flex;
+    border: 1px solid;
+    flex-basis: 25%;
+
+}
+
+
+main {
+    display: flex;
+    border: 1px solid;
+    flex: 1;
+
+
+}

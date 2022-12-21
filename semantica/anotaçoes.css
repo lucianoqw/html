@@ -1,0 +1,55 @@
+/* terminologia
+- Flx container: algo que contem 
+ -flex item: 
+-nesting: elementos dentro de outros elementos 
+-Axis: eixos, 
+ -main: encho principal
+  starn, end
+ -cross: crusado
+  -star, end
+-flex sizing
+  -flexível
+  -altera width/height dos itens 
+  para preenchimentodos espaços do flex container
+    
+*/
+/*propriedades do flex container
+ # Direção dos itens 
+
+ ## flex-flow
+ -shorthand
+ - flex-direction \\ flex-wrap
+ flex-wrap: multiplas linhas 
+
+ justify-content
+  Alinhamento dos elementos dentro do container
+  -Distribuição dos elementos 
+
+    valeres 
+    - flex-start
+    -flex-end
+    -flex-center
+    -space-around: espaço em volta deles 
+    -space-between: entre eles 
+    -space-evenly: espaço por igual
+
+    align-items
+     - Alinhamento dos elementos no eixo cruzado
+
+     ## valeres 
+     - stretch
+     - flex-start
+     - flex-end
+     - flex-center
+
+
+     /* gap 
+     -  espaço entre os eementos 
+
+     ## valors 
+     Unidades de medidas 
+      fixas px, pt 
+      flexiveis: %, em, rem */
+
+/* flex grow 
+      o crescimento do item docontainer em relaçao aos espaços vazios.
